@@ -1,0 +1,34 @@
+.form-container {
+    width: 450px;
+    background-color: #fff4f0; /* Một lớp màu đen đục để làm nổi bật nội dung */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Đặt z-index để form-container nằm trên cùng */
+    color: #fff; /* Màu chữ trắng để đảm bảo đọc được trên nền hình */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 0 auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    height: 30px;
+    margin-top: 17px;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: rgb(255, 249, 130);
+}

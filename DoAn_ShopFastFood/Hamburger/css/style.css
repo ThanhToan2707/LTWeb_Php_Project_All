@@ -1,0 +1,278 @@
+body {
+  margin: 100px;
+  background-color: rgb(255, 255, 255);
+}
+
+#TrangWeb {
+  background-color: #ffd2a5;
+  font-family: Tahoma;
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px solid rgb(129, 45, 0);
+}
+
+#PhanDau {
+  width: 1000px;
+  height: 200px;
+  background: url(../images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #db0000;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+}
+#PhanDau a {
+  color: #db0000;
+}
+
+#PhanGiua {
+  width: 1000px;
+}
+
+#BenTrai {
+  width: 245px;
+  background-color: #fff4f0;
+  float: left;
+}
+
+#BenTrai h3 {
+  text-shadow: #1a0600 1px 2px 5px;
+  text-align: center;
+  font-size: 20px;
+  padding: 2px 0 0 5px;
+  margin-bottom: 0;
+  margin-top: 8px;
+  background-color: #e93e00;
+  color: #ffffff;
+}
+
+#BenTrai ul {
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #df7605;
+}
+
+#BenTrai ul li a:visited {
+  text-align: center;
+  text-decoration: none;
+  color: #f23800;
+}
+
+/* Bổ sung thêm cột bên trái */
+#BenTrai ul.support-menu li a {
+  display: block; /* đầy đủ khối để dễ click */
+  background: #fff; /* nền trắng */
+  color: #e93e00; /* chữ cam/đỏ giống header */
+  border: 1px solid #e93e00; /* viền đỏ */
+  padding: 6px 12px; /* khoảng đệm trong link */
+  border-radius: 4px; /* bo góc như button */
+  text-align: center; /* căn giữa chữ */
+  margin: 4px 0; /* cách li giữa các mục */
+  transition: background 0.2s, color 0.2s;
+}
+#BenTrai ul.support-menu li a:hover {
+  background: #e93e00; /* nền đỏ khi hover */
+  color: #fff; /* chữ trắng khi hover */
+}
+
+/* ===== 2. Khi hover lên toàn bộ <li> cũng đổi nền nhạt ===== */
+#BenTrai ul.support-menu li:hover {
+  background-color: #fde5de; /* nền nhạt sáng khi hover */
+}
+
+#BenPhai {
+  width: 754px;
+  float: right;
+  margin-bottom: 15px;
+}
+
+#BenPhai h3 {
+  font-size: 36px;
+  padding: 2px 0 10px 0;
+  color: rgb(255, 102, 0);
+  font-family: Tahoma;
+  margin-top: 8px;
+  margin-bottom: 0;
+  text-shadow: 3px 4px 3px #1a0600;
+  text-align: center;
+}
+
+#BenPhai h4 {
+  font-size: 15px;
+  padding: 2px 0 10px 0;
+  color: #008000;
+  font-family: Tahoma;
+  margin-top: 8px;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 3px #ffd700;
+}
+
+#PhanCuoi {
+  width: 1000px;
+  clear: both;
+  height: 50px;
+  background: #e93e00;
+}
+
+.lienhe {
+  text-align: center;
+  vertical-align: middle;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  padding-top: 15px;
+  text-shadow: #1a0600 2px 2px 5px;
+}
+
+.ThongBaoLoi {
+  padding: 0;
+  margin: 0;
+  color: #ff0000;
+}
+
+.ThongBao {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #ff4000;
+}
+
+table.Form {
+  border-collapse: collapse;
+}
+
+table.Form th {
+  border: 0px solid #778899;
+  padding: 3px 2px 3px 2px;
+}
+
+table.Form td {
+  border: 0px solid #778899;
+  padding: 3px 2px 3px 2px;
+}
+
+table.DanhSach {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.DanhSach th {
+  border: 1px solid #778899;
+  padding: 3px 2px 3px 2px;
+  background: #b0c4de;
+}
+
+table.DanhSach td {
+  border: 1px solid #778899;
+  padding: 3px 2px 3px 2px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 300px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px dotted #808000;
+}
+
+select {
+  width: 300px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px dotted #808000;
+}
+
+textarea {
+  border-top: 1px dotted #808000;
+  border-left: 1px dotted #808000;
+  border-right: 1px dotted #808000;
+  border-bottom: 1px dotted #808000;
+}
+
+input[type="submit"] {
+  margin-top: 8px;
+  border: 1px solid #ff0000;
+  padding: 3px 5px 3px 5px;
+  background-color: #d8d8d2;
+}
+
+input.error {
+  border-bottom: 1px solid #ff0000;
+}
+
+select.error {
+  border-bottom: 1px solid #ff0000;
+}
+
+textarea.error {
+  border-top: 1px solid #ff0000;
+  border-left: 1px solid #ff0000;
+  border-right: 1px solid #ff0000;
+  border-bottom: 1px solid #ff0000;
+}
+
+label.error {
+  color: #ff0000;
+}
+
+span.requirefield {
+  color: #ff0000;
+  font-size: 12px;
+}
+
+p.requirefields {
+  color: #ff0000;
+  font-style: italic;
+  font-size: 12px;
+  padding: 0;
+  margin: 3px 0px 3px 0px;
+}
+
+/* design thẻ a và ul li */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+  /* position: relative; gạch chân chạy đỏ */
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #f23800;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* hiệu ứng gạch chân khi hover */
+/* li::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #5c26e4;
+	transform: scaleX(0);
+	transform-origin: bottom right;
+	transition: transform 0.3s ease;
+} */
+
+li:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+#BenTrai li:hover {
+  background-color: #dee3e7;
+}
