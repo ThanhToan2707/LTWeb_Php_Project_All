@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư viện Thành phố (HCMC Lib)</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">HCMC Lib</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Chủ đề
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Tiểu thuyết</a></li>
+                  <li><a class="dropdown-item" href="#">Trinh thám</a></li>
+                  <li><a class="dropdown-item" href="#">Truyện tranh</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">SGK</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Giỏ sách</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Xin chào, Cường
+                  </a>
+                  <ul class="dropdown-menu end-0" style="left:auto">
+                    <li><a class="dropdown-item" href="#">Thông tin tài khoản</a></li>
+                    <li><a class="dropdown-item" href="#">Lịch sử mượn sách</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                  </ul>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <div id="carouselExample" class="carousel slide my-3">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="anh1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="anh2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="anh3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-3">
+                <form action="" method="get" class="mb-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Nhập tựa sách cần tìm">
+                        <button class="btn btn-primary" type="submit" id="search">Tìm</button>
+                    </div>
+                </form>
+
+                <ul class="list-group mb-3">
+                    <li class="list-group-item active" aria-current="true">Sách đọc nhiều</li>
+                    <li class="list-group-item">1. Dark nhân tâm</li>
+                    <li class="list-group-item">2. Tuổi trẻ đáng giá bao nhiêu?</li>
+                    <li class="list-group-item">3. Bí quyết không ăn mà vẫn sống</li>
+                    <li class="list-group-item">4. Sắc đẹp ngàn cân</li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="sach1.jpg" class="w-100">
+                </div>
+                <div class="col-md-6">
+                  <h2>Truyện đọc cho bé trước giờ ngủ</h2>
+                  <div class="row">
+                    <div class="col-md-6">
+                      Tác giả: 
+                      <strong>Đồng Dao</strong>
+                    </div>
+                    <div class="col-md-6">
+                      Chủ đề: 
+                      <strong>Thiếu nhi</strong>
+                    </div>
+                  </div>
+                  <div class="text-danger fs-1">68.000đ</div>
+                  <small>Còn <strong>5</strong> quyển trong thư viện</small>
+                  <br>
+                  <button class="btn btn-outline-primary btn-lg">Mượn sách</button>
+                  <hr>
+                  <p class="my-3">
+                    Kể chuyện cho bé trước giờ đi ngủ là một thói quen tốt giúp bé có giấc ngủ ngon hơn. Những câu chuyện giống như một cánh cửa mở ra cho bé một thế giới kì diệu đầy màu sắc.
+
+Việc kể chuyện cho bé trước giờ đi ngủ không chỉ giúp bé phát triển khả năng ngôn ngữ, trí tưởng tượng, vun đắp tâm hồn bé mà còn hình thành văn hóa đọc sách ngay từ khi còn nhỏ.
+
+Truyện kể trước giờ đi ngủ là những câu chuyện ý nghĩ kết hợp với hình ảnh minh họa ngộ nghĩnh khiến bé yêu thích. Cuối mỗi câu chuyện đều có lời của mẹ để đúc kết những bài học, điều hay lẽ phải cho bé noi theo.
+
+Trước giờ đi ngủ, bố mẹ dành thời gian đọc sách cùng con, giúp con có một giấc ngủ sâu, gắn kết tình cảm gia đình cũng như nuôi dưỡng được tính cách tốt đẹp cho bé ngay từ khi còn nhỏ.
+                  </p>
+                </div>
+              </div>
+              <h2>Có thể bạn thích đọc</h2>
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card mb-3">
+                        <img src="sach1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Truyện đọc cho bé trướC giờ ngủ</h5>
+                          <p class="card-text">68.500đ</p>
+                          <a href="#" class="btn btn-primary">Mượn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card mb-3">
+                        <img src="sach1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Truyện đọc cho bé trướC giờ ngủ</h5>
+                          <p class="card-text">68.500đ</p>
+                          <a href="#" class="btn btn-primary">Mượn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card mb-3">
+                        <img src="sach1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Truyện đọc cho bé trướC giờ ngủ</h5>
+                          <p class="card-text">68.500đ</p>
+                          <a href="#" class="btn btn-primary">Mượn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card mb-3">
+                        <img src="sach1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Truyện đọc cho bé trướC giờ ngủ</h5>
+                          <p class="card-text">68.500đ</p>
+                          <a href="#" class="btn btn-primary">Mượn</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <h2>Cảm nghĩ của bạn đọc</h2>
+              <div class="row my-3 border rounded-3">
+                <div class="col-sm-3">
+                  <strong>Phạm Ngọc Cường</strong><br>
+                  11:17 28/09/2023<br>
+                  <i>Đã mượn 1 lần</i>
+                </div>
+                <div class="col-sm-9">
+                  Trong muôn vàn nhà văn viết truyện cho thiếu nhi, Tô Hoài vẫn có một vị trí nhất định. Bởi ông đem đến người đọc thứ văn chương mộc mạc, dễ hiểu, dễ gần, dễ cảm. Ông khiến người đọc rung cảm theo từng trang viết, từng câu chuyện giản đơn nhưng thấm thía. Bước vào thế giới của tác phẩm “Những truyện ngắn viết cho thiếu nhi- Tô Hoài”, bạn sẽ thấy rõ điều đó. 
+                </div>
+              </div>
+              <div class="row my-3 border rounded-3">
+                <div class="col-sm-3">
+                  <strong>Phạm Ngọc Cường</strong><br>
+                  11:17 28/09/2023<br>
+                  <i>Đã mượn 1 lần</i>
+                </div>
+                <div class="col-sm-9">
+                  Trong muôn vàn nhà văn viết truyện cho thiếu nhi, Tô Hoài vẫn có một vị trí nhất định. Bởi ông đem đến người đọc thứ văn chương mộc mạc, dễ hiểu, dễ gần, dễ cảm. Ông khiến người đọc rung cảm theo từng trang viết, từng câu chuyện giản đơn nhưng thấm thía. Bước vào thế giới của tác phẩm “Những truyện ngắn viết cho thiếu nhi- Tô Hoài”, bạn sẽ thấy rõ điều đó. 
+                </div>
+              </div>
+              <div class="row my-3 border rounded-3">
+                <div class="col-sm-3">
+                  <strong>Phạm Ngọc Cường</strong><br>
+                  11:17 28/09/2023<br>
+                  <i>Đã mượn 1 lần</i>
+                </div>
+                <div class="col-sm-9">
+                  Trong muôn vàn nhà văn viết truyện cho thiếu nhi, Tô Hoài vẫn có một vị trí nhất định. Bởi ông đem đến người đọc thứ văn chương mộc mạc, dễ hiểu, dễ gần, dễ cảm. Ông khiến người đọc rung cảm theo từng trang viết, từng câu chuyện giản đơn nhưng thấm thía. Bước vào thế giới của tác phẩm “Những truyện ngắn viết cho thiếu nhi- Tô Hoài”, bạn sẽ thấy rõ điều đó. 
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <footer class="text-center text-bg-primary p-3 rounded-3">
+            Bản quyền &copy; 2023, thuộc về Thư viện Thành phố (HCMC Lib)
+        </footer>
+    </div>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
