@@ -29,13 +29,20 @@
                             Chủ đề
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Tiểu thuyết</a></li>
-                            <li><a class="dropdown-item" href="#">Trinh thám</a></li>
-                            <li><a class="dropdown-item" href="#">Truyện tranh</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">SGK</a></li>
+                            <li><a class="dropdown-item" href="?mod=page&act=home">Tất cả</a></li>
+                            <?php if (isset($categories) && count($categories) > 0): ?>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <?php foreach ($categories as $cat): ?>
+                                    <li>
+                                        <a class="dropdown-item <?= (isset($_GET['category']) && $_GET['category'] == $cat['MaCD']) ? 'active' : '' ?>"
+                                            href="?mod=page&act=home&category=<?= $cat['MaCD'] ?>">
+                                            <?= htmlspecialchars($cat['TenChuDe']) ?>
+                                        </a>
+                                    </li>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
                         </ul>
                     </li>
                 </ul>

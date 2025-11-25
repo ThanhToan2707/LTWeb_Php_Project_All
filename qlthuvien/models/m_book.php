@@ -75,3 +75,10 @@ function book_count()
     $sql = "SELECT COUNT(*) FROM sach";
     return pdo_getValue($sql);
 }
+
+//lay sach theo chu de
+function book_getByCategory($MaCD)
+{
+    $sql = "SELECT s.*, cd.TenChuDe FROM sach s INNER JOIN chude cd ON s.MaCD = cd.MaCD WHERE s.MaCD = ? ORDER BY s.MaSach DESC";
+    return pdo_getAll($sql, $MaCD);
+}

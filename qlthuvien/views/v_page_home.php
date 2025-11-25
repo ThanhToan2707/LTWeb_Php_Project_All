@@ -21,6 +21,28 @@
             </div>
         <?php endif; ?>
     </div>
+<?php elseif (isset($categoryBooks) && $categoryBooks !== null): ?>
+    <h2>Chủ đề: <?= htmlspecialchars($selectedCategory['TenChuDe']) ?> (<?= count($categoryBooks) ?> sách)</h2>
+    <div class="row">
+        <?php if (count($categoryBooks) > 0): ?>
+            <?php foreach ($categoryBooks as $book): ?>
+                <div class="col-sm-3">
+                    <div class="card mb-3">
+                        <img src="<?= $baseUrl ?>upload/product/<?= $book['HinhAnh'] ?>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><?= $book['TuaSach'] ?></h5>
+                            <p class="card-text"><?= number_format($book['GiaTri'], 0, ',', '.') ?>đ</p>
+                            <a href="?mod=book&act=detail&id=<?= $book['MaSach'] ?>" class="btn btn-primary">Mượn</a>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <div class="col-12">
+                <div class="alert alert-info">Chưa có sách nào trong chủ đề này.</div>
+            </div>
+        <?php endif; ?>
+    </div>
 <?php endif; ?>
 
 <h2>Sách nổi bật</h2>
